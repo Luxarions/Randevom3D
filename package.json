@@ -1,21 +1,73 @@
 {
   "name": "randevom3d",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Randevom3D - Aplikasi 3D Randomizer interaktif berbasis Three.js untuk menghasilkan objek 3D acak",
+  "main": "Luxarion.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Luxarion.js",
+    "dev": "nodemon Luxarion.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Build script not configured yet\"",
+    "lint": "echo \"Linting not configured yet\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Luxarions/Randevom3D.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Luxarions/Randevom3D/issues"
+  "keywords": [
+    "3d",
+    "randomizer",
+    "random",
+    "generator",
+    "threejs",
+    "webgl",
+    "3d-objects",
+    "interactive",
+    "visualization"
+  ],
+  "author": {
+    "name": "Luxarions",
+    "email": "luxarions@example.com",
+    "url": "https://github.com/Luxarions"
   },
-  "homepage": "https://github.com/Luxarions/Randevom3D#readme"
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Luxarions/Randevom3D/issues",
+    "email": "luxarions@example.com"
+  },
+  "homepage": "https://github.com/Luxarions/Randevom3D#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "three": "^0.160.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "os": ["linux", "darwin", "win32"],
+  "cpu": ["x64", "arm64"],
+  "private": false,
+  "config": {
+    "port": "3000",
+    "host": "localhost"
+  },
+  "files": [
+    "Luxarion.js",
+    "index.html",
+    "public/",
+    "src/",
+    "assets/"
+  ],
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  }
 }
